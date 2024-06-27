@@ -17,10 +17,13 @@ from langchain.chains import RetrievalQA
 import re  # Import regular expression module
 import os
 
+aws_access_key_id = st.secrets["aws_access_key_id"]
+aws_secret_access_key = st.secrets["aws_secret_access_key"]
+
 # Configure AWS and Bedrock settings
 config = Config(read_timeout=1000)
-client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1', config=config)
-bedrock = boto3.client(service_name="bedrock-runtime")
+client = boto3.client(service_name='bedrock-runtime',region_name='ap-south-1', config=config ,aws_access_key_id=aws_access_key_id,aws_secret_access_key=aws_secret_access_key)
+bedrock = boto3.client(service_name="bedrock-runtime"region_name='us-east-1', config=config,aws_access_key_id=aws_access_key_id,aws_secret_access_key=aws_secret_access_key)
 bedrock_embeddings = BedrockEmbeddings(model_id="cohere.embed-english-v3", client=bedrock)
 
 # Load data for FAISS (commented out since it's already saved locally)
