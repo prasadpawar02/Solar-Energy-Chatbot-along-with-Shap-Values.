@@ -6,3 +6,4 @@ shap
 scikit-learn
 boto3
 langchain
+langchain-community
