@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-#import shap
+import shap
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
