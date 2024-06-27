@@ -2,6 +2,6 @@ numpy
 pandas 
 streamlit
 shap 
-sklearn
+scikit-learn
 boto3
 langchain
