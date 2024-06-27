@@ -27,7 +27,7 @@ bedrock = boto3.client(service_name="bedrock-runtime",region_name='us-east-1', c
 bedrock_embeddings = BedrockEmbeddings(model_id="cohere.embed-english-v3", client=bedrock)
 
 # Load data for FAISS (commented out since it's already saved locally)
-loader = CSVLoader(file_path=r"C:\Users\Prasad.pawar\new_data_with_anomalies.csv")
+loader = CSVLoader(file_path=r"new_data_with_anomalies.csv")
 data = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=250)
 docs = text_splitter.split_documents(data)
