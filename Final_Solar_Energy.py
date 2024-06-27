@@ -17,18 +17,6 @@ from langchain.chains import RetrievalQA
 import re  # Import regular expression module
 import os
 
-# Access secrets from st.secrets
-access_key = st.secrets["default"]["aws_access_key_id"]
-secret_key = st.secrets["default"]["aws_secret_access_key"]
-
-# Create a session using the access keys
-session = boto3.Session(
-    aws_access_key_id=access_key,
-    aws_secret_access_key=secret_key
-    )
-
-
-
 # Configure AWS and Bedrock settings
 config = Config(read_timeout=1000)
 client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1', config=config)
