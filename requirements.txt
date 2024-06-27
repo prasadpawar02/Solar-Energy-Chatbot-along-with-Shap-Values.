@@ -7,3 +7,5 @@ scikit-learn
 boto3
 langchain
 langchain-community
+faiss-gpu
+faiss-cpu
