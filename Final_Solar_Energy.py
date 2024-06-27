@@ -126,7 +126,7 @@ def display_suggestions(feature, shap_val):
 
 def main():
     st.set_page_config("Solar_Energy_App", layout="wide")
-    st.image(r"C:\Users\Prasad.pawar\Downloads\2759_Tridiagonal-Solutions_Logo-Design-Stationery-Design_April 24_Final_colour (1).jpg", use_column_width=False, width=250)
+    st.image(r"2759_Tridiagonal-Solutions_Logo-Design-Stationery-Design_April 24_Final_colour (1).jpg", use_column_width=False, width=250)
 
     # Define the layout with two columns
     col1, col2 = st.columns([1, 1])  # Adjust column widths as needed
