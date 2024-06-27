@@ -36,7 +36,7 @@ docs = text_splitter.split_documents(data)
 faiss_index_solar = FAISS.load_local("faiss_solar_final", bedrock_embeddings, allow_dangerous_deserialization=True)
 
 # Train Model (example)
-df = pd.read_csv(r"C:\Users\Prasad.pawar\cb_new_solar.csv")
+df = pd.read_csv(r"cb_new_solar.csv")
 df1 = df[['DATE_TIME', 'DC_POWER', 'AC_POWER',
           'DAILY_YIELD', 'TOTAL_YIELD',
           'AMBIENT_TEMPERATURE', 'MODULE_TEMPERATURE', 'IRRADIATION']]
