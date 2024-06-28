@@ -55,6 +55,7 @@ prompt_template = """
 Human: Use the following pieces of context to provide a concise answer to the question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 Answer should be strict to the Query. Don't make randomness,Don't make spam.
+Anomaly==0 it means normal data points if Anomaly==1 it means Anomaly.
 
 {context}
 Question: {question}
