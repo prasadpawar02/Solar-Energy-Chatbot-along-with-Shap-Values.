@@ -58,7 +58,7 @@ Answer should be strict to the Query. Don't make randomness...
 Analyze parameter and provides the generalize suggestion which is relate to query to avoid it.
 Provide generalize suggestion to avoid anomaly don't try create dataframe sql function don't make randomness.
 In generated response just provide only one date along with time stamp.
-Don't provide repeated words.Don't make spam.
+Don't provide repeated words.Don't make spam,if you don't have answer ,don't try to make up answer.
 
 {context}
 Question: {question}
