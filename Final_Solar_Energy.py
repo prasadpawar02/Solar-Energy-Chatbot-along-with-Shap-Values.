@@ -57,6 +57,7 @@ If you don't know the answer, just say that you don't know, don't try to make up
 Answer should be strict to the Query. Don't make randomness...
 Don't provide repeated words.Don't make spam.
 Don't try to make up answer if you don't know.
+Provide answer in human understandable format.
 
 {context}
 Question: {question}
