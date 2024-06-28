@@ -48,7 +48,7 @@ scaler = MinMaxScaler()
 mn = scaler.fit_transform(df1[['DC_POWER', 'AC_POWER', 'DAILY_YIELD', 'TOTAL_YIELD', 'AMBIENT_TEMPERATURE', 'MODULE_TEMPERATURE', 'IRRADIATION']])
 
 def get_llama3_llm():
-    llm = Bedrock(model_id="meta.llama3-8b-instruct-v1:0", client=bedrock, model_kwargs={'max_gen_len': 250, "temperature": 0.2, "top_p": 0.5})
+    llm = Bedrock(model_id="meta.llama3-8b-instruct-v1:0", client=bedrock, model_kwargs={'max_gen_len': 250, "temperature": 0.1, "top_p": 0.1})
     return llm
 
 prompt_template = """
