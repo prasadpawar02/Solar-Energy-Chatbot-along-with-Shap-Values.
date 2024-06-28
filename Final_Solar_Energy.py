@@ -55,7 +55,6 @@ prompt_template = """
 Human: Use the following pieces of context to provide a concise answer to the question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 Answer should be strict to the Query. Don't make randomness,Don't make spam.
-Don't try to make up answer if you don't know.
 
 {context}
 Question: {question}
